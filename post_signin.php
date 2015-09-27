@@ -48,7 +48,7 @@
             }
         
             if(!preg_match($date_regex, $birthday)){
-                $errors['birthday']="<p>as-tu essayé ce format : jour/mois/année ?</p>";
+                $errors['birthday']="<p>as-tu essayé le format jj / mm / aaaa ?</p>";
             }
         
             if($choice==''){
@@ -78,6 +78,8 @@
             // je concatène le résultat de mes != variable récupérée dans le formulaire.
             $messages = "Je m'appelle $firstname $name et je suis né le $birthday. J'habite à $adress et mon adresse mail est $mail. Je souhaite devenir un bleu car $choice.";
             $header_mail = "FROM:$mail";//j'identifie de qui provient le mail
+            $header_mail .="Mime-Version: 1.0\n";
+            $header_mail .= "Content-Type: text/plain;charset=UTF-8\n";
             
             mail($destinataire,$sujet,$messages,$header_mail); // j'utilise la fonction mail plus facilement grâce à mes variables.
             
