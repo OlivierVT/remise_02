@@ -27,6 +27,8 @@
             $adress= clean($_POST['adress']);
             $mail= clean($_POST['mail']);
             $choice= clean($_POST['bleu_choice']);
+        
+            $date_regex = '/(0[1-9]|[12][0-9]|3[01])[\/.](0[1-9]|1[012])[\/.](19|20)\d\d/'; 
 
           // je réutilise les informations nettoyée en bonus, je vérifié que certaines informations ont une taille minimum  
             if($firstname=='' || strlen($firstname)<2){
@@ -43,6 +45,10 @@
 
             if($birthday=='' || strlen($birthday)!=10){
                 $errors['birthday']="<p>Oh, une <strong>date anniversaire</strong> que nous pouvons retenir ?</p>";
+            }
+        
+            if(!preg_match($date_regex, $birthday)){
+                $errors['birthday']="<p>as-tu essayé ce format : jj/mm/yyyy ?</p>";
             }
         
             if($choice==''){
