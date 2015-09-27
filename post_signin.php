@@ -48,7 +48,7 @@
             }
         
             if(!preg_match($date_regex, $birthday)){
-                $errors['birthday']="<p>as-tu essayé ce format : jj/mm/yyyy ?</p>";
+                $errors['birthday']="<p>as-tu essayé ce format : jour/mois/année ?</p>";
             }
         
             if($choice==''){
