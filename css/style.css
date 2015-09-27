@@ -1,0 +1,178 @@
+body{
+    font-size: 1.6rem;
+    color: rgba(52, 73, 94,1.0);
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+    padding: 3rem 10rem 10rem 10rem;
+}
+
+.main_title{
+    font-size: 3.2rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.form_container{
+    position: relative;
+    width: 42.96875%;    
+    margin: 0 auto;
+    border: 2px solid rgba(44, 62, 80,1.0);
+    border-radius: 2%; 
+    overflow: hidden;   
+}
+
+.total_validation{
+    border-color: rgba(22, 160, 133,1.0);
+}
+
+.form{    
+    position: relative;
+    margin-top: 3rem;
+}
+
+.form_content{
+    padding: 5rem;
+}
+
+.feedback{
+    width: 100%;
+    color: rgba(236, 240, 241,1.0);
+}
+
+.feedback_valide{
+    border: 1px solid rgba(39, 174, 96,1.0);
+    background: rgba(39, 174, 96,1.0);   
+}
+
+.feedback_error{
+    border: 1px solid rgba(192, 57, 43,1.0);
+    background:rgba(192, 57, 43,.2);    
+}
+
+
+.input_error{
+    border: 1px solid rgba(192, 57, 43,1.0);
+    background:rgba(192, 57, 43,.2);
+}
+
+.input_name{
+    font-size: 1.2rem;
+    position: absolute;
+    top: -1.5rem;
+}
+.col-md-2:nth-child(odd){
+    margin-right: 10%;
+}
+.col-md-2{
+    width: 44.5%;    
+    float: left;
+        
+    box-sizing: border-box;
+    margin-bottom: 6rem;
+}
+
+.col-l-1{
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.form-group{
+    width: 100%;
+    position: relative;
+    
+}
+
+.basic_input{
+    display: block;
+    border-bottom: 1px solid rgba(44, 62, 80,1.0);
+    width: 95%;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    outline: none;
+    padding: 1rem 0;
+    max-height: 35px;
+    padding-left: .5rem;
+    
+}
+.legend_field{
+    margin-bottom: 3rem;
+    font-weight: bold;   
+}
+
+.input_check{
+    display: inline-block;
+    margin-right: 2%;
+}
+
+.separator_check{
+    margin-bottom: 2rem;
+}
+
+.basic_input:focus{
+    background: rgba(189, 195, 199,.2);
+}
+.basic_input:active{
+    background: rgba(189, 195, 199,.2);
+}
+input:-webkit-autofill{
+    background: rgba(189, 195, 199,.2)!important;
+}
+
+.label_check{
+    font-size: 1.2rem;
+    font-weight: 400;
+    
+}
+
+.btn{
+    padding: 1rem;
+    width: 100%;
+    margin-top: 3rem;
+    border-bottom-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+.btn_form{
+    background: rgba(26, 188, 156,1.0);
+    color: rgba(236, 240, 241,1.0);
+    transition: .3s ease;
+}
+
+.btn_form:hover{
+    background: rgba(22, 160, 133,1.0);
+    color: rgba(236, 240, 241,1.0);
+}
+
+.alert_title{
+    text-align: center;
+    color: rgba(44, 62, 80,1.0);
+    margin-bottom: 2rem;
+}
+.alert{
+    padding: 2rem;
+    width: 80%;
+    margin: 2rem auto 0 auto;
+    font-size: 1.3rem;   
+}
+
+.alert p{
+    margin-bottom: 1rem;
+}
+
+.alert_success{
+    background: rgba(26, 188, 156,.2);
+    border: 2px solid rgba(26, 188, 156,1);
+}
+
+.alert_danger{
+    background: rgba(231, 76, 60,.2);
+    border: 2px solid rgba(231, 76, 60,1);
+}
+
+
