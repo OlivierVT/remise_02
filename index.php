@@ -10,6 +10,7 @@
         <meta name="description" content="content">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="google" content="notranslate"/>
+        <link rel="icon" type="image/jpg" href="img/ci.jpg"/>
         <!--[if lt IE 9]>
                 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">               </script>
         <![endif]-->
@@ -43,8 +44,13 @@
     <body>
     <main class="container">
         <div class="form_container">
+           <?php
+                if($mobile == false){
+                echo ("<a href='https://github.com/OlivierVT/remise_02' class='btn_github'>voir le code sur Github</a>");
+                }           
+            ?>
             <h1 class="main_title">Inscription au cercle infographie</h1> 
-               
+            <p class="info_form">Afin de nous rejoindre nous te demandons une inscription sur notre site web.</p>   
        <!--Après avoir fait le traitement du formulaire, on demande à PHP si le tableau errors contient des erreurs dans le tableau de la session.-->
            <?php if(array_key_exists('errors',$_SESSION)):?>
             
